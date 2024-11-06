@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow and Go Beauty Parlour</title>
+    <link rel="stC:\Users\Mandala Gayathri\OneDrive\Desktop\ApexPLanet\Task 2\css\stylesheet" href="styles.css">
+    <script src="C:\Users\Mandala Gayathri\OneDrive\Desktop\ApexPLanet\Task 2\js\script.js" defer></script>
+    
+</head>
+<body>
+    <center>
+    <!--header section-->
+    <header>
+        <div class="logo">
+            <img src="C:\Users\Mandala Gayathri\OneDrive\Desktop\ApexPLanet\Image folder\logo.jpg" alt="company Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#service">Our Services</a></li>
+                <li><a href="#todo-list">Your Appointments</a></li>
+                <li><a href="#contact-form">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Glow and Go!!!</h1>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Image Section -->
+        <section id="hero">
+            <img src="C:\Users\Mandala Gayathri\OneDrive\Desktop\ApexPLanet\Image folder\image.jpg" alt="Beauty treatments at Glow and Go" class="hero-image" height="300" width="300">
+            <h2>Feel Your Best, Glow Your Best</h2>
+        </section>
+
+       <!-- Contact Form Section -->
+<section id="contact-form">
+    <h2>Contact Us</h2>
+    <form id="form" action="#" method="POST" onsubmit="return validateForm()">
+        
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+        <!-- Phone Number Field -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+        
+        <!-- Service Selection -->
+        <label for="service">Preferred Service:</label>
+        <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="haircut">Haircut</option>
+            <option value="facial">Facial</option>
+            <option value="manicure">Manicure</option>
+            <option value="massage">Massage</option>
+        </select><br><br>
+        
+        <!-- Message Field -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea><br><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+        <!-- To-Do List Section -->
+        <section id="todo-list">
+            <h2>Your Appointments...</h2>
+            <ul id="task-list">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+            <input type="text" id="new-task" placeholder="Add an appointment...">
+            <button onclick="addTask()">Add Appointment</button>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section id="gallery">
+            <h2>Our Services</h2>
+            <div class="gallery-container">
+                <img src="C:\Users\Mandala Gayathri\OneDrive\Desktop\ApexPLanet\Image folder\facial.jpg" alt="Facial Treatment" height="200" width="300">
+                <img src="C:\Users\Mandala Gayathri\OneDrive\Desktop\ApexPLanet\Image folder\mp.jpg" alt="Manicure and Pedicure" height="200" width="200">
+                <img src="C:\Users\Mandala Gayathri\OneDrive\Desktop\ApexPLanet\Image folder\hair styling.jpg" alt="Hair Styling">
+                <img src="C:\Users\Mandala Gayathri\OneDrive\Desktop\ApexPLanet\Image folder\threading.jpg" alt="Threading">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Glow and Go Beauty Parlour | All rights reserved</p>
+    </footer>
+    </center>
+</body>
+</html>

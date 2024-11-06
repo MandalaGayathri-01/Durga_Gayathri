@@ -1,0 +1,235 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #044478;
+    
+}
+
+
+header, main, footer {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width of the page */
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff69b4; /* Soft pink */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+/* Navigation Styles */
+nav {
+    background-color: #ff69b4; /* Soft pink background */
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    gap: 20px; /* Space between links */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f44336; /* Red color on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack the links vertically on smaller screens */
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Slightly smaller font size on smaller screens */
+    }
+}
+
+/* Hero Image Section */
+#hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+#hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Form Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f44336;
+}
+
+/* To-Do List Styles */
+#todo-list {
+    width: 100%;
+    max-width: 600px;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#task-list li button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#task-list li button:hover {
+    background-color: darkred;
+}
+
+/* Gallery Section */
+#gallery {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #ff69b4;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    header {
+        text-align: left;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+    }
+}
